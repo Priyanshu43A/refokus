@@ -12,9 +12,10 @@ const Footer = () => {
         <div className="basis-1/2 flex gap-8">
           <div className="flex flex-col">
             <h4 className="mb-8 text-sm">Socials</h4>
-            {["Instagram", "Twitter", "LinkedIn"].map((elem) => {
+            {["Instagram", "Twitter", "LinkedIn"].map((elem, index) => {
               return (
                 <a
+                  key={index}
                   className="mb-1 text-sm hover:text-zinc-100 text-zinc-500"
                   href="#"
                 >
@@ -25,9 +26,10 @@ const Footer = () => {
           </div>
           <div className="flex flex-col">
             <h4 className="mb-8 text-sm text-zinc-500">Links</h4>
-            {["Home", "Work", "Careers", "Contact"].map((elem) => {
+            {["Home", "Work", "Careers", "Contact"].map((elem, index) => {
               return (
                 <a
+                  key={index}
                   className="mb-1 text-sm hover:text-zinc-500 text-zinc-100"
                   href="#"
                 >

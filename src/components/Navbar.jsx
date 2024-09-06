@@ -15,14 +15,16 @@ const Navbar = () => {
         <div className="links flex items-center gap-12 ml-20">
           {["Home", "Work", "Culture", "", "News"].map((elem, index) =>
             elem.length === 0 ? (
-              <span className="w-[1px] h-10 bg-zinc-700"></span>
+              <span key={index} className="w-[1px] h-10 bg-zinc-700"></span>
             ) : (
               <a
+                key={index}
                 href="#"
                 className="text-sm font-regular flex items-center gap-1"
               >
                 {index === 1 && (
                   <span
+                    key={index}
                     style={{ boxShadow: "0 0 0.25rem #00FF19" }}
                     className="inline-block w-1 h-1 bg-green-500 rounded-full"
                   ></span>

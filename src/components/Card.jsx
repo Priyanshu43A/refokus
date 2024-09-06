@@ -1,34 +1,14 @@
 import React, { useRef } from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 
-const Card = ({ width, para, start, hover, bgColor }) => {
-  const cardRef = useRef(null);
-  const handleMouse = () => {
-    if (cardRef.current) {
-      //console.log(cardRef.current); // Access the DOM element
-      // Perform actions with the DOM element
-      cardRef.current.style.backgroundColor = hover;
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (cardRef.current) {
-      //console.log(cardRef.current); // Access the DOM element
-      // Perform actions with the DOM element
-      cardRef.current.style.backgroundColor = bgColor;
-    }
-  };
-
+const Card = ({ width, para, start, hover = "false", bgColor }) => {
   return (
-    <div
-      ref={cardRef}
-      onMouseOver={() => {
-        handleMouse();
+    <motion.div
+      whileHover={{
+        backgroundColor: hover === true ? "#7443ff" : "#3f3f3f7c",
       }}
-      onMouseLeave={() => {
-        handleMouseLeave();
-      }}
-      className={`${width} transition ease-in flex flex-col justify-between bg-zinc-800 p-5 rounded-xl text-white`}
+      className={`${width} card flex flex-col justify-between bg-zinc-800 p-5 rounded-xl text-white`}
     >
       <div className="top w-full">
         <div className="flex items-center justify-between">
@@ -52,7 +32,7 @@ const Card = ({ width, para, start, hover, bgColor }) => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

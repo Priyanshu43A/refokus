@@ -6,6 +6,7 @@ import Products from "./components/Products";
 import Marquees from "./components/Marquees";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
+import Dtls from "./components/Dtls";
 
 import LocomotiveScroll from "locomotive-scroll";
 
@@ -21,6 +22,7 @@ const App = () => {
       <Marquees />
       <Cards />
       <Footer />
+      <Dtls />
     </div>
   );
 };

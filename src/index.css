@@ -5,3 +5,12 @@
 body {
   @apply bg-zinc-900;
 }
+
+.card:hover .top {
+  padding: 0 10px;
+  transition: padding 0.3s ease;
+}
+
+.top {
+  transition: padding 0.3s ease;
+}

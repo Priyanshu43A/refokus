@@ -8,13 +8,13 @@ const Cards = () => {
         <Card
           para={true}
           bgColor="#27272a"
-          hover="#3f3f46"
+        
           start={false}
           width="basis-1/3"
         />
         <Card
           para={false}
-          hover="#6d28d9"
+          hover={true}
           bgColor="#27272a"
           start={true}
           width="basis-2/3"

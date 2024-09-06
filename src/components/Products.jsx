@@ -118,7 +118,7 @@ const Products = () => {
               autoPlay={true}
               muted={true}
               loop={true}
-              src="./src/assets/videos/cula-169.mp4"
+              src="https://files.refokus.com/storage/v1/object/public/Portfolio%20Videos/cula-169.webm"
             ></video>
           </motion.div>
           <motion.div
@@ -131,7 +131,7 @@ const Products = () => {
               autoPlay={true}
               muted={true}
               loop={true}
-              src="./src/assets/videos/bcgp-169.webm"
+              src="https://files.refokus.com/storage/v1/object/public/Portfolio%20Videos/bcgp-169.webm"
             ></video>
           </motion.div>
           <motion.div
@@ -144,7 +144,7 @@ const Products = () => {
               muted={true}
               loop={true}
               className="w-full h-full rounded-sm object-contain"
-              src="./src/assets/videos/arqitel-169.webm"
+              src="https://files.refokus.com/storage/v1/object/public/Portfolio%20Videos/arqitel-169.webm"
             ></video>
           </motion.div>
           <motion.div
